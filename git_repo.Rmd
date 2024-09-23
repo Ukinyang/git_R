@@ -8,7 +8,32 @@ date: "2024-09-18"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Using git on R Studio
+
+This document is about using git on R Studio
+
+Steps on how to connect git on R studio
+
+1. create a github account on <https://github.com> use an appropriate username and sign up
+
+2. Install git on your computer
+  2.1. Got to <https://gitforwindows.org/>
+  2.2. follow the instruction and prompt to download and install git on your computer.
+  2.3 Open R studio and go to console, istall the package "usethis". This package enables the use of git on R studio, 
+  2.4 After installation, load the "usethis" library on your console by running the following code
+```{r}
+library(usethis)
+```
+  
+  2.5 Run the following code in your console by replacing user.name with the username you used to open your github account and email.address with the email used also.
+```{r}
+use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")
+```
+  
+2.3 To check if git has been installed, open the R studio, and on the console, type which git" command prompt on your computer by inputting "CMD" on your search bar, open it and type "which git"
+```{r}
+which git
+```
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
